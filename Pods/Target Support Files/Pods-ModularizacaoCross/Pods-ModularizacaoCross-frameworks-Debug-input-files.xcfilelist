@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-ModularizacaoCross/Pods-ModularizacaoCross-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ActionsiOS/ActionsiOS.framework
+${PODS_ROOT}/../../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter/engine/Flutter.framework
+${BUILT_PRODUCTS_DIR}/ModuloNativoiOS/ModuloNativoiOS.framework
+${PODS_ROOT}/../../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter/App.framework

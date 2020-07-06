@@ -1,0 +1,6 @@
+framework module Pods_ModularizacaoCross_ModularizacaoCrossUITests {
+  umbrella header "Pods-ModularizacaoCross-ModularizacaoCrossUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

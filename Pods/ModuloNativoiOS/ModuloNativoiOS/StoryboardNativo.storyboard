@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela Nativa View Controller-->
+        <scene sceneID="6bg-G7-31r">
+            <objects>
+                <viewController storyboardIdentifier="TelaNativaViewController" id="J74-RQ-bbH" customClass="TelaNativaViewController" customModule="ModuloNativoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pa4-0G-RWE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM1-t3-zmJ">
+                                <rect key="frame" x="132" y="413" width="150" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="bBq-3O-o0z"/>
+                                    <constraint firstAttribute="height" constant="70" id="rPQ-As-OhS"/>
+                                </constraints>
+                                <state key="normal" title="Clique aqui">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicouNoBotao:" destination="J74-RQ-bbH" eventType="touchUpInside" id="1wy-Hk-xPC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GM1-t3-zmJ" firstAttribute="centerX" secondItem="pa4-0G-RWE" secondAttribute="centerX" id="eu0-8g-GER"/>
+                            <constraint firstItem="GM1-t3-zmJ" firstAttribute="centerY" secondItem="pa4-0G-RWE" secondAttribute="centerY" id="yM2-V9-otu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NJk-JW-ekr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVV-yD-hvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="32.8125"/>
+        </scene>
+    </scenes>
+</document>

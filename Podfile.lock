@@ -1,0 +1,40 @@
+PODS:
+  - ActionsiOS (1.0.4)
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - modulo_cross_flutter (0.0.1):
+    - Flutter
+  - ModuloNativoiOS (1.0.5):
+    - ActionsiOS (= 1.0.4)
+
+DEPENDENCIES:
+  - ActionsiOS (= 1.0.4)
+  - Flutter (from `../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter/FlutterPluginRegistrant`)
+  - modulo_cross_flutter (from `../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter`)
+  - ModuloNativoiOS (= 1.0.5)
+
+SPEC REPOS:
+  https://github.com/1ucas/private-cocoapods-specs.git:
+    - ActionsiOS
+    - ModuloNativoiOS
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter/FlutterPluginRegistrant"
+  modulo_cross_flutter:
+    :path: "../ModuloCrossFlutter/modulo_cross_flutter/.ios/Flutter"
+
+SPEC CHECKSUMS:
+  ActionsiOS: c0ed2f5c397fcdfbbcad8f9ea19083aac08a1e6f
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+  modulo_cross_flutter: 9fa085e839d9e8d76fa616608e694e06149c1d86
+  ModuloNativoiOS: a4dffe2597e1d34c1a43bb429ee79344883b5f41
+
+PODFILE CHECKSUM: e21a19725be55184bb79892c7a8cabd1e194f2ed
+
+COCOAPODS: 1.9.3

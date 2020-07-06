@@ -1,0 +1,6 @@
+framework module ModuloNativoiOS {
+  umbrella header "ModuloNativoiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

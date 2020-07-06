@@ -1,0 +1,6 @@
+framework module ActionsiOS {
+  umbrella header "ActionsiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
