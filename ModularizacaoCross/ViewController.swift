@@ -23,7 +23,24 @@ class ViewController: UIViewController {
         let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
         let flutterViewController =
             FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
-        present(flutterViewController, animated: true, completion: nil)
+        
+        let testMethodChannel = FlutterMethodChannel(name: "com.manobray/viewcontroller", binaryMessenger: flutterViewController.binaryMessenger)
+        
+        testMethodChannel.setMethodCallHandler({
+            (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in
+            
+            guard call.method == "atualizarDados" else {
+              result(FlutterMethodNotImplemented)
+              return
+            }
+            let arguments = call.arguments as? [String:Int]
+            if let args = arguments {
+                let cliques = args["cliques"] == nil ? 0 : args["cliques"]
+                self.labelOrigem.text = "Flutter: \(cliques!)"
+            }
+        });
+
+        navigationController?.pushViewController(flutterViewController, animated: true)
     }
     
     @IBAction func abrirNativo(_ sender: UIButton) {

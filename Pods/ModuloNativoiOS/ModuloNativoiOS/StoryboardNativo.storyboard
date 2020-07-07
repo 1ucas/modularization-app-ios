@@ -23,21 +23,48 @@
                                     <constraint firstAttribute="width" constant="150" id="bBq-3O-o0z"/>
                                     <constraint firstAttribute="height" constant="70" id="rPQ-As-OhS"/>
                                 </constraints>
-                                <state key="normal" title="Clique aqui">
+                                <state key="normal" title="VOLTAR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="clicouNoBotao:" destination="J74-RQ-bbH" eventType="touchUpInside" id="1wy-Hk-xPC"/>
                                 </connections>
                             </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="B9i-zo-LRg">
+                                <rect key="frame" x="160" y="331" width="94" height="32"/>
+                                <connections>
+                                    <action selector="alterouValor:" destination="J74-RQ-bbH" eventType="valueChanged" id="hZj-ZO-F5Y"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-Gf-5dL">
+                                <rect key="frame" x="201.5" y="260" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantidade de cliques: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6V-7J-ve7">
+                                <rect key="frame" x="116.5" y="189" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="7A7-Gf-5dL" firstAttribute="centerX" secondItem="pa4-0G-RWE" secondAttribute="centerX" id="65I-H5-H97"/>
+                            <constraint firstItem="B9i-zo-LRg" firstAttribute="top" secondItem="7A7-Gf-5dL" secondAttribute="bottom" constant="50" id="6q7-aY-Cpa"/>
+                            <constraint firstItem="GM1-t3-zmJ" firstAttribute="top" secondItem="B9i-zo-LRg" secondAttribute="bottom" constant="50" id="Ba9-07-NdL"/>
+                            <constraint firstItem="B9i-zo-LRg" firstAttribute="centerX" secondItem="pa4-0G-RWE" secondAttribute="centerX" id="U29-hh-LtC"/>
                             <constraint firstItem="GM1-t3-zmJ" firstAttribute="centerX" secondItem="pa4-0G-RWE" secondAttribute="centerX" id="eu0-8g-GER"/>
+                            <constraint firstItem="7A7-Gf-5dL" firstAttribute="top" secondItem="q6V-7J-ve7" secondAttribute="bottom" constant="50" id="qUD-Ff-TIA"/>
+                            <constraint firstItem="q6V-7J-ve7" firstAttribute="centerX" secondItem="pa4-0G-RWE" secondAttribute="centerX" id="uNq-If-cYA"/>
                             <constraint firstItem="GM1-t3-zmJ" firstAttribute="centerY" secondItem="pa4-0G-RWE" secondAttribute="centerY" id="yM2-V9-otu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NJk-JW-ekr"/>
                     </view>
+                    <connections>
+                        <outlet property="lblCliques" destination="7A7-Gf-5dL" id="lB7-Az-7rU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVV-yD-hvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

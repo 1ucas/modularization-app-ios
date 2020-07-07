@@ -14,7 +14,7 @@ target 'ModularizacaoCross' do
 
   # Pods for ModularizacaoCross
   pod 'ActionsiOS', '1.0.4'
-  pod 'ModuloNativoiOS', '1.0.5'
+  pod 'ModuloNativoiOS', '1.0.6'
   install_all_flutter_pods(flutter_application_path)
 
   target 'ModularizacaoCrossTests' do
